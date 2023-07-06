@@ -31,7 +31,7 @@ namespace YoutubeApi
         static void Main(string[] args)
         {
             string videoId = "ccewwizWzAk";  //  j6muwUGdvXw
-            string apikey = "AIzaSyC9O_Y7y8fZ1pk2NcbZAWtm4sXGMbGem-g";
+            string apikey = ""; //your api key
             //7xPsl7ltKnM -Y6Vq3tdQsp4 
             //GetVideoComments(videoId);
             //GetYoubeComments();
@@ -187,12 +187,12 @@ namespace YoutubeApi
 
         }
 
-       // private const string apiKey = "AIzaSyC9O_Y7y8fZ1pk2NcbZAWtm4sXGMbGem-g"; // Replace with your own API key
+       // private const string apiKey = ""; // Replace with your own API key
         public static void GetYoutubeIdByEmail()
         {
             try
             {
-                string apiKey = "AIzaSyC9O_Y7y8fZ1pk2NcbZAWtm4sXGMbGem-g";
+                string apiKey = ""; //your api key
                 string email = "siteshbranda@gmail.com";
                 // Create the YouTube service.
                 var youtubeService = new YouTubeService(new BaseClientService.Initializer()
@@ -254,7 +254,7 @@ namespace YoutubeApi
         {
             try
             {
-                string apiKey = "AIzaSyC9O_Y7y8fZ1pk2NcbZAWtm4sXGMbGem-g";
+                string apiKey = ""; // Replace with your own API key
                 var youtubeService = new YouTubeService(new BaseClientService.Initializer()
                 {
                     ApiKey = apiKey,
@@ -285,7 +285,7 @@ namespace YoutubeApi
         {
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = "AIzaSyC9O_Y7y8fZ1pk2NcbZAWtm4sXGMbGem-g"
+                ApiKey = "" // Replace with your own API key
             });
 
             var searchListRequest = youtubeService.Search.List("snippet");
@@ -498,10 +498,7 @@ namespace YoutubeApi
         {
             try
             {
-                //phone no id:- 112303521902889
-                // business acount id:- 106740289135432
-                //sitesh business id: 100928133055691  239147455532217
-                //whatsapp business id: 100928133055691 //106740289135432
+              
                 var httpClient = new HttpClient();
                 var endpoint = "https://api.whatsapp.com/v1/chats";
                 var clientId = "737957195001452";
